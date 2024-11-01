@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="grad.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+</head>
+
+<body>
+    <nav>
+        <p>Sale up to 50% on this sunday. Read More</p>
+        <div>
+            <a href="#">Help</a>
+            <select>
+                <option value="">English</option>
+                <option value="">Arabic</option>
+            </select>
+            <select>
+                <option value="">Dollar</option>
+                <option value="">Pound</option>
+            </select>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="hd">
+            <img src="./logo.png" alt="logo">
+        </div>
+
+        <form action="" class="searchForm">
+            <input class="searchBox" type="text" placeholder="Search Product">
+            <i class="fa-solid fa-magnifying-glass" style="color: #979797;"></i>
+        </form>
+
+        <div class="icons">
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+            <a href="#"><i class="fa-regular fa-heart"></i></i></a>
+            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+    </header>
+
+    <hr />
+    <section class="landright">
+        <div>
+            <label class="toggle-list" for="Categories">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            
+            <select id="Categories" class="left">
+                <option>Browse Categories</option>
+                <option value="">Beds</option>
+                <option value="">Lighting</option>
+                <option value="">Sofas & Sleeper sofas</option>
+                <option value="">Storage</option>
+                <option value="">Armchairs & Chaises</option>
+                <option value="">Decoration</option>
+                <option value="">Kitchen Cabinets</option>
+                <option value="">Coffee & Tables</option>
+
+            </select>
+        </div>
+        <div class="right">
+            <div>
+                <select>
+                    <option value=>Home</option>
+                    <option>Home-1</option>
+                    <option>Home-2</option>
+                    <option>Home-3</option>
+                    <option>Home-4</option>
+
+                </select>
+
+            </div>
+            <div>
+                <select>
+                    <option value="">Shop</option>
+                    <option value="x">Shop1</option>
+                    <option value="x">Shop2</option>
+                    <option value="x">Shop3</option>
+                    <option value="x">Shop4</option>
+                </select>
+            </div>
+            <div>
+                <select>
+                    <option>Products</option>
+                    <option>Product D</option>
+                    <option>Checkout</option>
+                    <option>Wishlist</option>
+
+                </select>
+
+            </div>
+            <div>
+                <select>
+                    <option value="">Pages</option>
+                    <option>About</option>
+                    <option>Contact</option>
+                </select>
+
+            </div>
+            <div>
+                <select>
+                    <option value="">Blog</option>
+                    <option value="Rome">Blog L</option>
+                    <option value="Manchester">Blog D</option>
+                </select>
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="breadcrumbSection">
+        <h1>Checkout</h1>
+        <p>Home/<span style="color: gray;">Checkout</span></p>
+    </div>
+
+    <section>
+        <form class="container" action="https://api.web3forms.com/submit" method="POST">
+            <div class="checkout">
+                <h2>Billing Details</h2>
+                <div class="input-group">
+                    <input type="text" placeholder="First Name" name="first name" required>
+                    <input type="text" placeholder="Last Name" name="last name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="E-mail" required name="email">
+                    <input type="number" placeholder="Phone No." required name="phone">
+                </div>
+                <div class="input-group full-width">
+                    <input type="text" placeholder="Address" name="address" required>
+                </div>
+                <div class="input-group">
+                    <select name="town" required>
+                        <option value="">Town/City</option>
+                        <option value="Rome">Rome</option>
+                        <option value="Manchester">Manchester</option>
+                        <option value="Paris">Paris</option>
+                        <option value="Berlin">Berlin</option>
+                    </select>
+                    <input type="number" placeholder="Postal Code" required name="postal">
+                </div>
+                <div class="input-group">
+                    <select required name="state">
+                        <option value="">State/Country</option>
+                        <option value="Italy">Italy</option>
+                        <option value="England">England</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                    </select>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="save-details">
+                    <label for="save-details">Save your details for future order purposes</label>
+                </div>
+            </div>
+            <!--  important -->
+
+            <input type="hidden" name="access_key" value="7856fc9c-fde3-4cbe-b46b-5ca44faa3232">
+            <div class="summary">
+                <h2>Price Summary</h2>
+                <div id="price-summary1">
+                    <p>Price: <span id="price1">$0</span></p>
+                    <p>Delivery Charge: <span id="delivery1">$50</span></p>
+                    <p>Sub Total: <span id="subtotal1">$0</span></p>
+                    <p>Total Cost: <span id="total-cost1">$0</span></p>
+                </div>               
+                <div class="payment-icons">
+                    <div class="iii">
+                        <img  src="./AM_mc_vs_dc_ae.jpg" alt="PayPal">
+                    </div>
+
+                    <button class="place-order">Place Order Now</button>
+
+                </div>
+            </div>
+        </form>
+    </section>
+    <hr>
+    <div class="ymal" align="center">
+        You May Also Like
+    </div>
+    <section class="products">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.iideainformatics.it/html/devgalaxy/farny/assets/img/top-products/1.png">
+            </div>
+            <div class="product-details">
+                <h2>New Trendy Armchair</h2>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$35.20</p>
+                <div class="offer">NEW</div>
+                <div class="options">
+                    <span><i class="fa-solid fa-basket-shopping"></i></span>
+                    <span><i class="fa-solid fa-heart"></i></span>
+                    <span><i class="fa-solid fa-eye"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.iideainformatics.it/html/devgalaxy/farny/assets/img/top-products/2.png">
+            </div>
+            <div class="product-details">
+                <h2>New Trendy Armchair</h2>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$35.20</p>
+            </div>
+            <div class="options">
+                <span><i class="fa-solid fa-basket-shopping"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-eye"></i></span>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.iideainformatics.it/html/devgalaxy/farny/assets/img/top-products/3.png">
+            </div>
+            <div class="product-details">
+                <h2>New Trendy Armchair</h2>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$35.20</p>
+            </div>
+            <div class="offer">-30%</div>
+            <div class="options">
+                <span><i class="fa-solid fa-basket-shopping"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-eye"></i></span>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.iideainformatics.it/html/devgalaxy/farny/assets/img/top-products/4.png">
+            </div>
+            <div class="product-details">
+                <h2>New Trendy Armchair</h2>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$35.20</p>
+            </div>
+            <div class="options">
+                <span><i class="fa-solid fa-basket-shopping"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-eye"></i></span>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Owl Carousel JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./grad.js"></script>
+    <script src="./../ziko.js"></script>
+</body>
+
+</html>

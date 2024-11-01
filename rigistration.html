@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css-styling/form.css" />
+  </head>
+  <body>
+    <!-- Overlay for background dim -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Login Form Modal -->
+    <div class="login-modal" id="loginModal">
+      <div class="login-header">
+        <h2>Sign In</h2>
+        <span class="close-btn" id="closeBtn" data-bs-dismiss="modal"
+          >&times;</span
+        >
+      </div>
+      <form class="login-form" id="loginForm">
+        <div class="input-group">
+          <input
+            type="text"
+            id="username"
+            autocomplete="off"
+            placeholder="Username or Email Address"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            autocomplete="new-password"
+            required
+          />
+        </div>
+        <div class="options">
+          <label class="checkbox-container">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+            Remember Me
+          </label>
+          <a href="#">Forgot your password</a>
+        </div>
+        <button type="submit" id="signInBtn" class="btn">Sign In</button>
+        <p class="register-text">
+          Don’t have an account? <a href="#">Register</a>
+        </p>
+      </form>
+    </div>
+
+    <script src="JS/form.js"></script>
+  </body>
+</html>

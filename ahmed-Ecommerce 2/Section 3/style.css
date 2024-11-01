@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 50px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .owl-theme .item {
+    max-width: 220px;
+    height: 360px;
+  }
+
+  .top-prod-thumb {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .owl-theme .item {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .top-prod-thumb {
+    height: 180px;
+  }
+}

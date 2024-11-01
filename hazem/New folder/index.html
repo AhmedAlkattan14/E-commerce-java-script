@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farny</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- start header navbar1 -->
+    <div class="row bg-dark m-0 sticky-top">
+        <div class="col-8 text-white">
+            <p class="p-0">Sale up to 50% on this sunday. <a class=read-more href="sale.html"><strong>Read More</strong></a></p>
+        </div>
+        <div class="col">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <a href="#nav1" data-toggle="collapse" class="navbar-toggler">
+                </a>
+                <div class="collapse navbar-collapse" id="nav1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="Help.html" target="_blank" class="nav-link">Help</a>
+                        </li>
+                        <li class="nav-item dropdown" id="English">
+                            <a class="nav-link dropdown-toggle" href="#" id="div-dropdown-1" data-toggle="dropdown"
+                                role="button" aria-expanded="false">English</a>
+                            <div class="dropdown-menu" aria-labelledby="div-dropdown-1">
+                                <a href="#" class="dropdown-item">English</a>
+                                <hr>
+                                <a href="#" class="dropdown-item">Arabic</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="div-dropdown-2" data-toggle="dropdown"
+                                role="button" aria-expanded="false">Dollar</a>
+                            <div class="dropdown-menu" aria-labelledby="div-dropdown-2" id="Dollar-menu">
+                                <a href="#" class="dropdown-item">USD $</a>
+                                <hr>
+                                <a href="#" class="dropdown-item">EUR €</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- end header navbar1 -->
+    <!-- start header navbar2 -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <img src="./images/logo.png" alt="" srcset="" class="img-logo">
+            </div>
+            <div class="col-6">
+                <form class="d-flex" role="search"></form>
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="width: 100%;">
+                </form>
+            </div>
+            <div class="col" style="margin-left: 20px;">
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="svg1"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                    </svg>
+
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="svg2"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                    </svg>
+
+
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="svg3"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5m2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!-- end header navbar2 -->
+    <!-- start header navbar3 -->
+    <div class="container mt-3 mb-3 bg-light">
+        <div class="row">
+            <div class="col mt-2">
+                <h4>
+                    <div class="dropdown">
+                        <div class="badge dropdown-toggle" id="dropdown-id-1" data-toggle="dropdown">Browse Categories
+                        </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-id-1">
+                            <a href="#" class="dropdown-item">Beds</a>
+                            <hr>
+                            <a href="#" class="dropdown-item">Lighting</a>
+                            <hr>
+                            <a href="#" class="dropdown-item">Sofas & Sleeper sofas</a>
+                            <hr>
+                            <a href="#" class="dropdown-item">Storage</a>
+                            <hr>
+                            <a href="#" class="dropdown-item">Armchairs & Chaises</a>
+                            <hr>
+                            <a href="#" class="dropdown-item">Decoration </a>
+                            <hr>
+                            <a href="#" class="dropdown-item">Kitchen Cabinets</a>
+                            <hr>
+                            <a href="#" class="dropdown-item">Coffee & Tables</a>
+                            <hr>
+                            <a href="#" class="dropdown-item">Outdoor Furniture </a>
+                        </div>
+                    </div>
+                </h4>
+            </div>
+            <div class="col ml-3">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a href="#nav-1" data-toggle="collapse" class="navbar-toggler">
+
+                        <span class="navbar-toggler-icon"></span>
+                    </a>
+                    <div class="collapse navbar-collapse" id="nav-1">
+                        <ul class="navbar-nav">
+                            <li class="nav-item nav-item-2">
+                                <a class="nav-link" href="../../index.html">Home</a>
+                            </li>
+                            <li class="nav-item nav-item-2 ml-3">
+                                <a class="nav-link" href="./index.html">Shop</a>
+                            </li>
+                            <li class="nav-item nav-item-2 ml-3">
+                                <a class="nav-link" href="../../abbas/bootstrap/assets/html/checkout.html">Checkout</a>
+
+                            </li>
+                            <li class="nav-item nav-item-2 ml-3">
+                                <a class="nav-link" href="../../cart.html">Cart</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- end header navbar3 -->
+    <!-- start section 1 -->
+    <section class="section-1">
+        <h1>Furniture</h1>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#"> <b>Home</b> </a></li>
+            <li class="breadcrumb-item"><a href="#">Furniture</a></li>
+        </ul>
+    </section>
+    <!-- end section 1 -->
+    <!-- start section 2 -->
+    <div class="section-2">
+        <div class="alert alert-dark">
+            <div class="row">
+                <div class="col-8">
+                    <p class="pragraph-alert">Showing 1-9 of 20 Results</p>
+                </div>
+                <div class="col">
+                    <div class="dropdown">
+                        <div class="btn btn-light dropdown-toggle" id="dropdown-1" data-toggle="dropdown">Sort by
+                            Popularity
+                        </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-1">
+                            <a href="#" class="dropdown-item">Sort by Popularity</a>
+                            <a href="#" class="dropdown-item">Featured</a>
+                            <a href="#" class="dropdown-item">Alphabetically, A-Z</a>
+                            <a href="#" class="dropdown-item">Alphabetically, Z-A</a>
+                            <a href="#" class="dropdown-item">Price, low to high</a>
+                            <a href="#" class="dropdown-item">Price, high to low</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- end section 2 -->
+    <!-- start section 3 -->
+    <section class="products">
+        <div class="product-card" id="1">
+            <div class="product-image">
+                <img src="./images/1.png">
+            </div>
+            <div class="product-details">
+                <h6>New Trendy Armchair</h6>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$35.20</p>
+                <div class="offer">NEW</div>
+                <div class="options">
+                    <span><i class="fa-solid fa-basket-shopping" onclick="addToCart('New Trendy Armchair', 35.20,'./images/1.png')"></i></span>
+                    <span><i class="fa-solid fa-heart"></i></span>
+                    <span><i class="fa-solid fa-eye"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" id="2">
+            <div class="product-image">
+                <img src="./images/2.png">
+            </div>
+            <div class="product-details">
+                <h6>New Trendy Armchair</h6>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$35.20</p>
+            </div>
+            <div class="options">
+                <span><i class="fa-solid fa-basket-shopping" onclick="addToCart('New Trendy Armchair', 35.20,'./images/2.png')"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-eye"></i></span>
+            </div>
+        </div>
+
+        <div class="product-card" id="3">
+            <div class="product-image">
+                <img src="./images/3.png">
+            </div>
+            <div class="product-details">
+                <h6>New Trendy Armchair</h6>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$35.20</p>
+            </div>
+            <div class="offer">-30%</div>
+            <div class="options">
+                <span><i class="fa-solid fa-basket-shopping"onclick="addToCart('New Trendy Armchair', 35.20,'./images/3.png')"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-eye"></i></span>
+            </div>
+        </div>
+    </section>
+    <section class="products">
+        <div class="product-card" id="1">
+            <div class="product-image">
+                <img src="./images/4.png">
+            </div>
+            <div class="product-details">
+                <h6>New Trendy Armchair</h6>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$35.20</p>
+                <div class="offer">NEW</div>
+                <div class="options">
+                    <span><i class="fa-solid fa-basket-shopping"onclick="addToCart('New Trendy Armchair', 35.20,'./images/4.png')"></i></span>
+                    <span><i class="fa-solid fa-heart"></i></span>
+                    <span><i class="fa-solid fa-eye"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" id="2">
+            <div class="product-image">
+                <img src="./images/5.png">
+            </div>
+            <div class="product-details">
+                <h6>New Trendy Armchair</h6>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$35.20</p>
+            </div>
+            <div class="options">
+                <span><i class="fa-solid fa-basket-shopping" onclick="addToCart('New Trendy Armchair', 35.20,'./images/5')"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-eye"></i></span>
+            </div>
+        </div>
+
+        <div class="product-card" id="3">
+            <div class="product-image">
+                <img src="./images/6.png">
+            </div>
+            <div class="product-details">
+                <h6>New Trendy Armchair</h6>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$35.20</p>
+            </div>
+            <div class="offer">-30%</div>
+            <div class="options">
+                <span><i class="fa-solid fa-basket-shopping"onclick="addToCart('New Trendy Armchair', 35.20,'./images/6.png')"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-eye"></i></span>
+            </div>
+        </div>
+    </section>
+    <section class="products">
+        <div class="product-card" id="1">
+            <div class="product-image">
+                <img src="./images/7.png">
+            </div>
+            <div class="product-details">
+                <h6>New Trendy Armchair</h6>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$35.20</p>
+                <div class="offer">NEW</div>
+                <div class="options">
+                    <span><i class="fa-solid fa-basket-shopping"onclick="addToCart('New Trendy Armchair', 35.20,'./images/7.png')"></i></span>
+                    <span><i class="fa-solid fa-heart"></i></span>
+                    <span><i class="fa-solid fa-eye"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" id="2">
+            <div class="product-image">
+                <img src="./images/8.png">
+            </div>
+            <div class="product-details">
+                <h6>New Trendy Armchair</h6>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$35.20</p>
+            </div>
+            <div class="options">
+                <span><i class="fa-solid fa-basket-shopping"onclick="addToCart('New Trendy Armchair', 35.20,'./images/1.png')"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-eye"></i></span>
+            </div>
+        </div>
+
+        <div class="product-card" id="3">
+            <div class="product-image">
+                <img src="./images/9.png">
+            </div>
+            <div class="product-details">
+                <h6>New Trendy Armchair</h6>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$35.20</p>
+            </div>
+            <div class="offer">-30%</div>
+            <div class="options">
+                <span><i class="fa-solid fa-basket-shopping"onclick="addToCart('New Trendy Armchair', 35.20,'./images/9.png')"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-eye"></i></span>
+            </div>
+        </div>
+    </section>
+    <section class="products">
+        <div class="product-card" id="1">
+            <div class="product-image">
+                <img src="./images/10.png">
+            </div>
+            <div class="product-details">
+                <h6>New Trendy Armchair</h6>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$35.20</p>
+                <div class="offer">NEW</div>
+                <div class="options">
+                    <span><i class="fa-solid fa-basket-shopping"onclick="addToCart('New Trendy Armchair', 35.20,'./images/10.png')"></i></span>
+                    <span><i class="fa-solid fa-heart"></i></span>
+                    <span><i class="fa-solid fa-eye"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" id="2">
+            <div class="product-image">
+                <img src="./images/11.png">
+            </div>
+            <div class="product-details">
+                <h6>New Trendy Armchair</h6>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$35.20</p>
+            </div>
+            <div class="options">
+                <span><i class="fa-solid fa-basket-shopping"onclick="addToCart('New Trendy Armchair', 35.20,'./images/11.png')"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-eye"></i></span>
+            </div>
+        </div>
+
+        <div class="product-card" id="3">
+            <div class="product-image">
+                <img src="./images/12.png">
+            </div>
+            <div class="product-details">
+                <h6>New Trendy Armchair</h6>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$35.20</p>
+            </div>
+            <div class="offer">-30%</div>
+            <div class="options">
+                <span><i class="fa-solid fa-basket-shopping"onclick="addToCart('New Trendy Armchair', 35.20,'./images/12.png')"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-eye"></i></span>
+            </div>
+        </div>
+    </section>
+    <!-- end section 3 -->
+    <div id="image-container" class="d-flex justify-content-center">
+        <img src="./images/1-1.png" class="d-block" alt="...">
+        <img src="./images/2 -1.png" class="d-block" alt="...">
+        <img src="./images/3-1.png" class="d-block" alt="...">
+        <img src="./images/4-1.png" class="d-block" alt="...">
+        <img src="./images/5-1.png" class="d-block" alt="...">
+    </div>
+    <!-- start section 3 -->
+
+    <!-- end section 3 -->
+    <!-- start section 4 -->
+    <div class="subscribe pt-3 pb-3 text-md-start">
+
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col">
+                    <p class="sectionsubscribe-4">Subscribe to our Newsletter:</p>
+                </div>
+                <div class="col-md-6 col-lg-7 md-5">
+                    <input type="text" placeholder="Enter Email address"
+                        class="w-100 text-light p-2 mb-3 bg-transparent">
+                </div>
+                <div class="col">
+                    <input class="btn rounded-pill mb-3" type="submit" value="Subscribe" id="Subscribe-footer" />
+                </div>
+            </div>
+
+        </div>
+        <!-- end section 4 -->
+        <!-- start footer -->
+        <div class="footer pt-5 pb-5 text-center text-md-start">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="info mb-5">
+                            <img src="./images/logo-white.png" alt="" srcset="" class="img-logo-footer">
+                            <p class="pragraph-footer">You might remember the Dell computer commercials in which a
+                                youth
+                                reports
+                                this exciting news to his friends.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="links">
+                            <h4 class="h4-footer">About Us</h5>
+                                <ul class="list-unstyled lh-lg">
+                                    <li>
+                                        <a href="#">Our Story</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Carreer</a>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="links">
+                            <h4 class="h4-footer">Shop By</h4>
+                            <ul class="list-unstyled lh-lg">
+                                <li>
+                                    <a href="#">New Arrival</a>
+                                </li>
+                                <li>
+                                    <a href="#">Best Seller</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Feature Product</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Sale Off</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="links">
+                            <h4 class="Contact-Us">Contact Us</h4>
+                            <ul class="d-flex list-unstyled" id="ul-links-footer">
+                                <li>
+                                    <a class="d-block text-light" href="#" id="containerSVG">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="Contact-Us-footer" viewBox="0 0 16 16"
+                                            id="facebook">
+                                            <path
+                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="d-block text-light" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="Contact-Us-footer" viewBox="0 0 16 16"
+                                            id="twitter">
+                                            <path
+                                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="d-block text-light" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="Contact-Us-footer" viewBox="0 0 16 16"
+                                            id="linkedend">
+                                            <path
+                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="d-block text-light" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="Contact-Us-footer" viewBox="0 0 16 16"
+                                            id="youtube">
+                                            <path
+                                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="copyright">
+                            Created By <span>Frontend Developer ONL1_SWD3_G9e</span>
+                            <p>Instractor / Ahmed Yehia</p>
+                        </div>
+                        <div> &copy;
+                            2024 <span>Farny</span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="index.js"></script>
+    <script src="./ziko.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 992px) {
+  .product-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product-item {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-item {
+    width: 100%;
+  }
+}

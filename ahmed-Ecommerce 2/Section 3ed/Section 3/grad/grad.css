@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+nav{
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+    color: #979797;
+    font-size: 19px;
+}
+
+a{
+    color: #979797;
+    text-decoration: none;
+}
+
+select{
+    background-color: transparent;
+    border: none;
+    color: #979797;
+    font-size: 19px;
+    outline: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 50px;
+
+    
+}
+.hd{
+    margin-left:50px ;
+    
+
+}
+
+.icons{
+    margin-right: 50px;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.searchBox{
+   
+   outline: none;
+   border: none;
+   width:500px ;
+}
+
+.searchForm{
+    display: flex;
+    flex-direction: row;
+    border: .5px #979797 solid ;
+    padding: 5px 15px;
+    font-size: 20px;
+    
+}
+
+hr{
+    margin: 0 auto;
+    width: 70%;
+    border: .5px #c2c2c2a5 solid;
+}
+
+.breadcrumbSection{
+    display:flex ;
+    background: url(https://www.iideainformatics.it/html/devgalaxy/farny/assets/img/bread-bg.png);
+    background-size: cover;
+    height: 320px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 80%;
+}
+
+.breadcrumbSection h1{
+    font-weight: 300;
+    font-size: 50px;
+    
+}
+
+
+.products{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.offer{
+    position: absolute;
+    background-color: #c5853a;
+    color: white;
+    width: 50px;
+    height: 30px;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options{
+    position: absolute;
+    display: flex;
+    gap: 30px;
+    bottom: 20%;
+    transition: .5s;
+    z-index: 1;
+    opacity: 0;
+}
+.product-card:hover .options{
+    bottom: 30%;
+    opacity: 1;
+}
+
+.options span{
+    background-color: white;
+    color: rgb(99, 99, 99);
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 19px;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.options span:hover{
+    background-color: #c5853a;
+    color: white;
+}
+
+.product-image{
+    background: #F2F2F2;
+    width: 270px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    overflow: hidden;
+}
+
+.product-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    z-index: 20;
+}
+
+.product-details h2{
+    font-weight: 300;
+}
+
+.stars{
+    display: flex;
+    justify-content: center;
+    color: #feb53e;
+    gap: 5px;
+}
+.products h4{
+    font-weight: 300;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px 100px;
+    gap: 20px;
+}
+
+.checkout {
+    flex: 2;
+    background-color: #F8F8F8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary {
+    flex: 1;
+    background-color: #F1F1F1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.full-width input {
+    width: 100%;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.checkbox input {
+    margin-right: 10px;
+}
+
+.price-summary p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.total {
+    font-weight: bold;
+    color: #c5853a;
+}
+
+.place-order {
+    background-color: #c5853a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.place-order:hover {
+    background-color: #b57433;
+}
+.product-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card .options {
+    position: absolute;
+    display: flex;
+    gap: 30px;
+    bottom: 20%;
+    transition: .5s ease-in-out;
+    z-index: 1;
+    opacity: 0;
+    right:11%;
+}
+
+.product-card:hover .options {
+    bottom: 35%;
+    opacity: 1;
+}
+
+.options span {
+    background-color: white;
+    color: rgb(99, 99, 99);
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 19px;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.options span:hover {
+    background-color: #c5853a;
+    color: white;
+}
+.landright{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 290px;
+    
+}
+.right{
+    display: flex;
+    gap: 50px;
+    transition: 0.1s;
+
+     
+    }
+.ymal{
+    font-size:30px;
+    margin-top: 10px;
+}
+.iii{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.iii img{
+    width: 70%;
+    height: 20%;
+} 
+.right :hover{
+    color: #c5853a;
+    transition: 1s;
+
+}
+/* باقي الأكواد */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.searchForm {
+    flex: 1;
+    max-width: 500px;
+}
+
+.searchBox {
+    width: 100%;
+}
+
+

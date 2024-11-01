@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="icon" href="/bootstrap/assets/images/icons8-return-purchase-24.png">
+    <!--  css-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!--  js-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- <nav class="na">
+        <p>Sale up to 50% on this sunday. <a href="">Read More</a></p>
+
+        <div>
+            <a href="#">Help</a>
+            <select>
+                <option value="">English</option>
+                <option value="">Arabic</option>
+            </select>
+            <select>
+                <option value="">Dollar</option>
+                <option value="">Pound</option>
+            </select>
+        </div>
+    </nav> -->
+    <!-- start nav-1 -->
+     <!-- top header -->
+     <nav class="navbar up-navbar sticky-top">
+     <div class="container-fluid  " >
+     
+        
+          <!-- start alert -->
+          <div style="padding: 6px;" class="alert" role="alert">
+            Sale up to 50% on this sunday
+            <a href="#" class="alert-link">. Read more</a>
+          </div>
+          <!-- end alert -->
+           <div class="">
+          <ul class="navbar-nav nav-up d-flex flex-row">
+            <li class="nav-item nav-item-up me-3 ps-2 pe-2">
+              <a class="nav-link link-top" style="color: aliceblue;" aria-current="page" href="#">help</a>
+            </li>
+
+            <!-- language start -->
+            <li class="nav-item nav-item-up item-lan me-3 ps-2 pe-2">
+              <button
+                class="dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                English
+              </button>
+              <ul class="dropdown-menu">
+                <li class="active">
+                  <a href="#" class="dropdown-item dropdown-item-top"
+                    >english</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">arabic</a>
+                </li>
+              </ul>
+            </li>
+            <!-- language end -->
+            <!-- -------cash start-------- -->
+            <li class="nav-item nav-item-up item-cash me-3">
+              <button
+                class="dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dollar
+              </button>
+              <ul class="dropdown-menu">
+                <li class="active">
+                  <a href="#" class="dropdown-item dropdown-item-top">USD $</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown-item">EUR €</a>
+                </li>
+              </ul>
+            </li>
+            <!-- -----cash end--------- -->
+          </ul>
+        
+        </div>
+    </div>
+</nav>
+    <!-- end nav-1 -->
+ <!-- start header navbar2 -->
+ <div class="nav-2 container-fluid ">
+    <div class="row nav-nav-2 ps-3">
+        <div class="col-2 ms-5 ps-5">
+            <img src="../images/logo.png" alt="" srcset="" class="img-logo">
+        </div>
+        <div class="col-5 ps-5 ms-5">
+            <form class="d-flex" role="search"></form>
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="width: 100%;">
+            </form>
+        </div>
+        <div class="col-4 icons-nav " style="width:20%;">
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="svg1"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                </svg>
+
+            </a>
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="svg2"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                </svg>
+
+
+            </a>
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="svg3"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5m2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    <hr>
+</div>
+<!-- end header navbar2 -->
+    <!-- <header class="header">
+        <div class="hd">
+            <img src="../images/logo.png" alt="logo">
+        </div>
+
+        <form action="" class="searchForm">
+            <input class="searchBox" type="text" placeholder="Search Product">
+            <i class="fa-solid fa-magnifying-glass" style="color: #979797;"></i>
+        </form>
+
+        <div class="icons">
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+            <a href="#"><i class="fa-regular fa-heart"></i></i></a>
+            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+    </header>
+    <form action="" class="secondSearchForm">
+        <input class="searchBox" type="text" placeholder="Search Product">
+        <i class="fa-solid fa-magnifying-glass" style="color: #979797;"></i>
+    </form>
+    <hr /> -->
+    <div class="container-xl">
+    <section class="navbar navbar-expand-lg ">
+            <label class="toggle-list navbar-brand" for="Categories">
+                <i class="fa-solid fa-bars"></i>
+                <select id="Categories" class="left">
+                    <option>Browse Categories</option>
+                    <option value="">Beds</option>
+                    <option value="">Lighting</option>
+                    <option value="">Sofas & Sleeper sofas</option>
+                    <option value="">Storage</option>
+                    <option value="">Armchairs & Chaises</option>
+                    <option value="">Decoration</option>
+                    <option value="">Kitchen Cabinets</option>
+                    <option value="">Coffee & Tables</option>
+                </select>
+            </label>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0  fs-5">
+                    <li class="nav-item tab-nav">
+                        <a class="nav-link" href="../../../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item tab-nav">
+                        <a class="nav-link" href="../../../../hazem/New folder/index.html">Shop</a>
+                    </li>
+                    <li class="nav-item tab-nav">
+                        <a class="nav-link" href="../../../../cart.html">Cart</a>
+                    </li>
+                    <li class="nav-item tab-nav">
+                        <a class="nav-link" href="./checkout.html">Checkout</a>
+                    </li>
+                </ul>
+            </div>
+        
+    </section>
+</div>
+    <div class="breadcrumbSection">
+        <h1>Checkout</h1>
+        <p><a claas="nav-chek-home" style="color:black;font-size: 25px;margin-right: 3px;" href="../../../../index.html">Home</a>/<span style="color: rgb(102, 96, 96); font-size: 20px; margin-left: 2px;">Checkout</span></p>
+    </div>
+
+    <section>
+        <form class="container" action="https://api.web3forms.com/submit" method="POST">
+            <div class="checkout">
+                <h2>Billing Details</h2>
+                <div class="input-group">
+                    <input type="text" placeholder="First Name" name="first name" required>
+                    <input type="text" placeholder="Last Name" name="last name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="E-mail" required name="email">
+                    <input type="number" placeholder="Phone No." required name="phone">
+                </div>
+                <div class="input-group full-width">
+                    <input type="text" placeholder="Address" name="address" required>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="save-details">
+                    <label for="save-details">Save your details for future order purposes</label>
+                </div>
+            </div>
+            <!--  important -->
+
+            <input type="hidden" name="access_key" value="7856fc9c-fde3-4cbe-b46b-5ca44faa3232">
+            <div class="summary">
+                <h2>Price Summary</h2>
+                <div class="price-summary">
+                    <p>Price <span id="price1"></span></p>
+                    <p>Delivery Charge <span>$50.00</span></p>
+                    <p>Sub Total <span id="subtotal1"></span></p>
+                    <p class="total">Total Cost <span id="total-cost1"></span></p>
+                </div>
+                <div class="payment-icons">
+                    <div class="iii">
+                        <img src="../images/AM_mc_vs_dc_ae.jpg" alt="PayPal">
+                    </div>
+
+                    <button class="place-order"> Order Now</button>
+
+                </div>
+            </div>
+        </form>
+    </section>
+    <hr>
+    <div class="ymal" align="center">
+        You May Also Like
+    </div>
+    <section class="products">
+        <div class="product-card" id="1">
+            <div class="product-image">
+                <img src="https://www.iideainformatics.it/html/devgalaxy/farny/assets/img/top-products/1.png">
+            </div>
+            <div class="product-details">
+                <h2>New Trendy Armchair</h2>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$35.20</p>
+                <div class="offer">NEW</div>
+                <div class="options">
+                    <span><i class="fa-solid fa-basket-shopping" onclick="addToCart('New Trendy Armchair', 35.20,'./gallery/photos/Soft Bench.jpg')"></i></span>
+                    <span><i class="fa-solid fa-heart"></i></span>
+                    <span><i class="fa-solid fa-eye"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" id="2">
+            <div class="product-image">
+                <img src="https://www.iideainformatics.it/html/devgalaxy/farny/assets/img/top-products/2.png">
+            </div>
+            <div class="product-details">
+                <h2>New Trendy Armchair</h2>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$35.20</p>
+            </div>
+            <div class="options">
+                <span><i class="fa-solid fa-basket-shopping"  onclick="addToCart('New Trendy Armchair', 35.20,'./gallery/photos/Soft Bench.jpg')"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-eye"></i></span>
+            </div>
+        </div>
+
+        <div class="product-card" id="3">
+            <div class="product-image">
+                <img src="https://www.iideainformatics.it/html/devgalaxy/farny/assets/img/top-products/3.png">
+            </div>
+            <div class="product-details">
+                <h2>New Trendy Armchair</h2>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$35.20</p>
+            </div>
+            <div class="offer">-30%</div>
+            <div class="options">
+                <span><i class="fa-solid fa-basket-shopping"  onclick="addToCart('New Trendy Armchair', 35.20,'./gallery/photos/Soft Bench.jpg')"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-eye"></i></span>
+            </div>
+        </div>
+
+        <div class="product-card" id="4">
+            <div class="product-image">
+                <img src="https://www.iideainformatics.it/html/devgalaxy/farny/assets/img/top-products/4.png">
+            </div>
+            <div class="product-details">
+                <h2>New Trendy Armchair</h2>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="price">$35.20</p>
+            </div>
+            <div class="options">
+                <span><i class="fa-solid fa-basket-shopping"  onclick="addToCart('New Trendy Armchair', 35.20,'./gallery/photos/Soft Bench.jpg')"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-eye"></i></span>
+            </div>
+        </div>
+    </section>
+    <!-- js -->
+     <script src="../../../../JS/grad.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/assets/js/main.js"></script>
+    <script src="../js/ziko.js"></script>
+</body>
+
+</html>

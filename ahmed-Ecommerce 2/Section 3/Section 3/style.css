@@ -1,0 +1,319 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 50px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    font-size: 16px;
+    color: #666;
+}
+
+.owl-carousel .item {
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease;
+}
+
+.owl-carousel .item:hover {
+    transform: translateY(-10px);
+    /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); */
+}
+
+.top-prod-thumb {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+}
+
+.top-prod-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    transition: transform 0.3s ease;
+}
+
+.owl-carousel .item:hover .top-prod-thumb img {
+    transform: scale(1.1);
+}
+
+.top-prod-thumb-icons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.owl-carousel .item:hover .top-prod-thumb-icons {
+    opacity: 1;
+}
+
+.icon-list {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.icon-list:hover {
+    background-color: #C5853A;
+    color: #fff;
+}
+
+
+.discount-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #C5853A;
+    color: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 10;
+}
+
+.top-prod-content {
+    text-align: left;
+    margin-top: 15px;
+}
+
+.top-product-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.stars {
+    color: orange;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.custom-prev,
+.custom-next {
+    display: inline-block;
+    background-color: #C5853A;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+    background-color: #a65e1b;
+    transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .owl-carousel .item {
+        max-width: 220px;
+        height: 360px;
+    }
+
+    .top-prod-thumb {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .owl-carousel .item {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .top-prod-thumb {
+        height: 180px;
+    }
+}
+/* ***************************************** */
+ /* الهيدر الخاص بـ Shopping Cart */
+ 
+ .text-center {
+    position: relative;
+    margin-bottom: 30px; /* Add margin for spacing */
+}
+
+.img-fluid {
+    width: 100%; /* Make the image full width */
+    height: auto;
+    /* border-radius: 10px;  */
+}
+
+.header-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(7, 4, 4);
+    text-align: center;
+    padding: 20px; /* Add padding for better spacing */
+    border-radius: 10px; /* Rounded corners */
+}
+table thead tr {
+    background-color: #e9e7e4; /* لون الخلفية */
+    color: rgb(10, 6, 6); /* لون النص */
+}
+
+table thead th {
+    padding: 10px; /* زيادة padding */
+    text-align: left; /* محاذاة النص إلى اليسار */
+    font-weight:bolder;
+}
+
+.cart-summary {
+    background: #f9f9f9; 
+    border: 1px solid #e2e2e2; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transition: box-shadow 0.3s; 
+    margin-left: 20px; /* إضافة مسافة من اليسار */
+}
+
+
+.cart-summary:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* تأثير ظل عند المرور */
+}
+
+.summary-title {
+    font-size: 1.6rem; /* حجم خط العنوان */
+    color: #333; /* لون غامق */
+    text-align: center; /* توسيط العنوان */
+    margin-bottom: 15px; /* مسافة أسفل */
+}
+
+.summary-details {
+    margin-bottom: 20px; /* مسافة أسفل */
+}
+
+.price-label {
+    font-weight: bold; /* نص عريض */
+    color: #555; /* لون خفيف للنص */
+}
+
+.price-value, .total-value {
+    color: #e366c4; /* لون أزرق للقيم */
+    font-weight:lighter; /* نص عريض للقيم */
+}
+
+.promo-label {
+    margin-top: 15px; /* مسافة فوق */
+    font-size: 1rem; /* حجم خط بسيط */
+    color: #555; /* لون خفيف */
+}
+
+.promo-input {
+    width: calc(100% - 100px); /* عرض كامل مع ترك مساحة للزر */
+    padding: 8px; /* حشو داخلي */
+    border: 1px solid #ddd; /* إطار خفيف */
+    border-radius: 4px; /* زوايا مدورة */
+    margin-top: 8px; /* مسافة فوق */
+}
+
+.promo-btn {
+    background-color: #abb6c9; /* لون زر الترويج */
+    color: white; /* لون النص */
+    padding: 8px 12px; /* حشو داخلي */
+    border: none; /* لا إطار */
+    border-radius: 4px; /* زوايا مدورة */
+    cursor: pointer; /* مؤشر الفأرة */
+    margin-left: 10px; /* مسافة يسار */
+    transition: background-color 0.3s; /* تأثير تغيير اللون */
+}
+
+.promo-btn:hover {
+    background-color: #9176d6; /* لون زر الترويج عند المرور */
+}
+
+.btn-custom {
+    background-color: #e67e22; /* لون الزر */
+    border: none; /* لا إطار */
+    color: white; /* لون النص */
+    padding: 10px; /* حشو داخلي */
+    border-radius: 4px; /* زوايا مدورة */
+    cursor: pointer; /* مؤشر الفأرة */
+    transition: background-color 0.3s; /* تأثير تغيير اللون */
+}
+
+.btn-custom:hover {
+    background-color: #d86b1f; /* لون الزر عند المرور */
+}
+
+
+.quantity {
+    width: 60px; /* جعل العرض أصغر */
+    padding: 5px; /* تقليل الحشو */
+}
+
+
+.btn-custom {
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.btn-custom:hover {
+    background-color: #d95f11; /* Darker shade on hover */
+}
+
+.btn-custom, .btn-danger {
+    color: white; /* لون النص أبيض */
+    border: none; /* إزالة الحدود */
+    padding: 5px 10px; /* ضبط padding */
+    border-radius: 5px; /* إضافة انحناء */
+    transition: background-color 0.3s; /* تأثير عند التمرير */
+}
+
+.btn-custom:hover, .btn-danger:hover {
+    background-color: #b3742f; /* لون أفتح عند التمرير */
+}
