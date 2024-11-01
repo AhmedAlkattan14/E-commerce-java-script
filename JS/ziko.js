@@ -13,7 +13,7 @@ function addToCart(productName, productPrice, productImage) {
 
     window.location.href = "../cart.html"; // تحويل للصفحة الثانية
   } else {
-    alert("Must Login Fist To See All Features!");
+    alert("Must Login First!");
   }
 }
 
